@@ -1,0 +1,9 @@
+<div class="container animated fadeIn">
+  <h1 class="display-2">Heroes</h1><h3 class="display-6">Super Heroes de Marvel y DC</h3>
+</div>
+<hr>
+<div class="card-columns animated fadeIn fast">
+  <div>
+    <app-tarjeta [heroe]="heroe" [idx]="i" *ngFor="let heroe of Heroes; let i = index"></app-tarjeta>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+<div class="container animated fadeIn">
+  <h1 class="display-2">Busqueda</h1><h3 class="display-6">{{termino}}</h3>
+<hr>
+<div *ngIf="Heroes.length == 0" class="row">
+  <div class="alert-info centrar" style="width: 100%">
+    <p>No se han encontrado ningun resultado</p>
+  </div>
+</div>
+<div class="card-columns animated fadeIn fast">
+  <div>
+    <app-tarjeta [heroe]="heroe" [idx]="heroe.idx" *ngFor="let heroe of Heroes"></app-tarjeta>
+  </div>
+</div>
+</div>
